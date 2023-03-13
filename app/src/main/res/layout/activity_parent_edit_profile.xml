@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".ParentEditProfileActivity">
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:background="@color/cyan2"
+        android:paddingHorizontal="15dp"
+        android:paddingVertical="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_arrow_back_ios_24"
+            />
+        <TextView
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_weight="1"
+            android:text="@string/edit_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <ScrollView
+        android:background="@color/cyan1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:padding="15dp"
+            android:orientation="vertical"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/txt_first_name"
+                    android:background="@drawable/edit_text_back"
+                    android:padding="10dp"
+                    android:layout_weight="1"
+                    android:hint="@string/first_name_hint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <Space
+                    android:layout_width="4dp"
+                    android:layout_height="wrap_content"/>
+                <EditText
+                    android:id="@+id/txt_last_name"
+                    android:background="@drawable/edit_text_back"
+                    android:padding="10dp"
+                    android:layout_weight="1"
+                    android:hint="@string/last_name_hint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+            <RadioGroup
+                android:id="@+id/group_gender"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edit_text_back"
+                android:padding="10dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textSize="18sp"
+                    android:layout_weight="1"
+                    android:text="@string/gender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <RadioButton
+                    android:id="@+id/rdbtn_male"
+                    android:checked="true"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/male"/>
+                <RadioButton
+                    android:id="@+id/rdbtn_female"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/female"/>
+
+            </RadioGroup>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_marginTop="5dp"
+                android:padding="10dp"
+                android:background="@drawable/edit_text_back"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/birth_date"/>
+                <DatePicker
+                    android:id="@+id/dp_birthdate"
+                    android:layout_weight="1"
+                    android:datePickerMode="spinner"
+                    android:calendarViewShown="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <EditText
+                android:layout_marginTop="5dp"
+                android:id="@+id/txt_state_description"
+                android:background="@drawable/edit_text_back"
+                android:padding="10dp"
+                android:lines="4"
+                android:gravity="top"
+                android:hint="@string/state_description_hint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+
+            <EditText
+                android:layout_marginTop="5dp"
+                android:id="@+id/txt_phone"
+                android:background="@drawable/edit_text_back"
+                android:padding="10dp"
+                android:gravity="top"
+                android:hint="@string/phone_hint"
+                android:inputType="phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+          <androidx.appcompat.widget.AppCompatButton
+                android:layout_marginTop="10dp"
+                android:id="@+id/btn_save"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="23sp"
+                android:background="@drawable/button_back"
+                android:text="@string/save"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </ScrollView>
+
+
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/sender_message"
+        android:orientation="vertical"
+        android:layout_gravity="right"
+        android:layout_width="wrap_content"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:padding="5dp"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+             <TextView
+                android:text="message"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:id="@+id/txt_sender_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <TextView
+            android:text="2022-12-30 7:0"
+            android:id="@+id/txt_send_date"
+            android:textColor="#716F6F"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/receiver_message"
+        android:orientation="vertical"
+        android:layout_gravity="left"
+        android:layout_width="wrap_content"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:padding="5dp"
+            android:background="@color/cyan2"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+                 <TextView
+
+                android:text="message"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:id="@+id/txt_receiver_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <TextView
+            android:text="2022-12-30 7:0"
+            android:id="@+id/txt_receiver_date"
+            android:textColor="#716F6F"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

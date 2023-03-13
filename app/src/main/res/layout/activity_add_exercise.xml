@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".AddExerciseActivity">
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:background="@color/cyan2"
+        android:paddingHorizontal="15dp"
+        android:paddingVertical="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_arrow_back_ios_24"
+            />
+        <TextView
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_weight="1"
+            android:text="@string/add_exercise"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <ScrollView
+        android:background="@color/cyan1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:padding="15dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:layout_marginTop="5dp"
+                android:id="@+id/txt_exercise_text"
+                android:background="@drawable/edit_text_back"
+                android:padding="10dp"
+                android:gravity="top"
+                android:hint="@string/exercise_text"
+                android:inputType="text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_marginTop="5dp"
+                android:padding="10dp"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_marginBottom="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/use_the_controls_to_record_the_sound_for_this_exercise"/>
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:padding="10dp"
+                    android:gravity="center_vertical"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/button_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/btn_record"
+                        android:src="@drawable/ic_baseline_fiber_manual_record_24"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <Space
+                        android:layout_width="15dp"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:id="@+id/txt_time"
+                        android:text="00:00"
+                        android:textColor="@color/white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <Space
+                        android:layout_width="15dp"
+                        android:layout_height="wrap_content"/>
+                    <ImageView
+                        android:visibility="gone"
+                        android:id="@+id/btn_delete_record"
+                        android:src="@drawable/ic_baseline_delete_24"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <TextView
+                    android:textStyle="bold"
+                    android:id="@+id/btn_upload"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/or_tap_here_to_select_an_audio_file_to_upload"/>
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:padding="10dp"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_marginBottom="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/option1_image"/>
+                <ImageView
+                    android:id="@+id/option1_image"
+                    android:scaleType="center"
+                    android:src="@drawable/ic_baseline_crop_original_24"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"/>
+
+
+                    <EditText
+                        android:id="@+id/txt_option1_text"
+                        android:background="@drawable/edit_text_back"
+                        android:padding="10dp"
+                        android:gravity="top"
+                        android:hint="@string/option1_text"
+                        android:inputType="text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:padding="10dp"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_marginBottom="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/option2_image"/>
+                <ImageView
+                    android:id="@+id/option2_image"
+                    android:scaleType="center"
+                    android:src="@drawable/ic_baseline_crop_original_24"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"/>
+
+                    <EditText
+                        android:id="@+id/txt_option2_text"
+                        android:background="@drawable/edit_text_back"
+                        android:padding="10dp"
+                        android:gravity="top"
+                        android:hint="@string/option2_text"
+                        android:inputType="text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:padding="10dp"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_marginBottom="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/option3_image"/>
+                <ImageView
+                    android:id="@+id/option3_image"
+                    android:scaleType="center"
+                    android:src="@drawable/ic_baseline_crop_original_24"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"/>
+                <EditText
+                    android:id="@+id/txt_option3_text"
+                    android:background="@drawable/edit_text_back"
+                    android:padding="10dp"
+                    android:gravity="top"
+                    android:hint="@string/option3_text"
+                    android:inputType="text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <RadioGroup
+                android:id="@+id/group_correct"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="@string/correct_option"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <RadioButton
+                     android:checked="true"
+                    android:text="1"
+                    android:buttonTint="@color/cyan2"
+                    android:id="@+id/option1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <RadioButton
+                    android:text="2"
+                    android:buttonTint="@color/cyan2"
+
+                    android:id="@+id/option2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <RadioButton
+                    android:text="3"
+                    android:buttonTint="@color/cyan2"
+                    android:id="@+id/option3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </RadioGroup>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_marginTop="10dp"
+                android:id="@+id/btn_save"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="23sp"
+                android:background="@drawable/button_back"
+                android:text="@string/save"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </ScrollView>
+
+
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

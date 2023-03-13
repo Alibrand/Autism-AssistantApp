@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "922875142849",
+    "project_id": "fanar-d73b8",
+    "storage_bucket": "fanar-d73b8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:922875142849:android:4803605b7dcadda095ea40",
+        "android_client_info": {
+          "package_name": "com.ksacp2022t3.fanarapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "922875142849-vv7i09a41967pn5mp7haubdfa7jdp028.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCd2wLwX2Z1knjTQFTbUInCgyH6o5en7OY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "922875142849-vv7i09a41967pn5mp7haubdfa7jdp028.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

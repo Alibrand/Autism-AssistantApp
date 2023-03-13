@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".AddCategoryActivity">
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:background="@color/cyan2"
+        android:paddingHorizontal="15dp"
+        android:paddingVertical="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_arrow_back_ios_24"
+            />
+        <TextView
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_weight="1"
+            android:text="@string/add_edit_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <ScrollView
+        android:background="@color/cyan1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:padding="15dp"
+            android:orientation="vertical"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <EditText
+                android:layout_marginTop="5dp"
+                android:id="@+id/txt_category_name"
+                android:background="@drawable/edit_text_back"
+                android:padding="10dp"
+                android:gravity="top"
+                android:hint="@string/category_title_hint"
+                android:inputType="text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:padding="10dp"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_marginBottom="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/select_category_image_hint"/>
+                <ImageView
+                    android:id="@+id/category_image"
+                    android:scaleType="center"
+                    android:src="@drawable/ic_baseline_crop_original_24"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"/>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+              <androidx.appcompat.widget.AppCompatButton
+                android:layout_marginTop="10dp"
+                android:id="@+id/btn_save"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="23sp"
+                android:background="@drawable/button_back"
+                android:text="@string/save"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </ScrollView>
+
+
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

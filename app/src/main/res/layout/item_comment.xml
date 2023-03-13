@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_margin="5dp"
+    android:padding="10dp"
+    android:layout_height="wrap_content">
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:padding="5dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/cyan2"
+            android:textSize="15sp"
+            android:text="Name"
+            android:id="@+id/txt_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:text="Comment"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:id="@+id/txt_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+ <TextView
+     android:text="2022-12-30 7:0"
+     android:id="@+id/txt_date"
+     android:textColor="#716F6F"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"/>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
